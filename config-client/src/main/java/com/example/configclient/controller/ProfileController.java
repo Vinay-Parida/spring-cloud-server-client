@@ -14,9 +14,6 @@ public class ProfileController {
     @Autowired
     private ProfileConfiguration profileConfiguration;
 
-    @Autowired
-    private CommonConfiguration commonConfiguration;
-
     @GetMapping("/profileConfig")
     public String profileConfig(){
         return profileConfiguration.getMessage();
